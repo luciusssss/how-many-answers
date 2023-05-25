@@ -53,5 +53,12 @@ The format of each dataset is as follows (adapted from the format of SQuAD).
 
 For with-clue-word questions, `clue_word` indicate the clue word, and `clue_word_types` have 5 types: "alternative" , "cardinal" , "comparative/superlative" , "ordinal" , "other_lexical_meaning".
 
-### Code
-We will release our code of *NumPred*, *Iterative* and *Generation*. Stay tuned!
+## Code
+
+### Iterative 
+
+Our implementation is based on the scripts of MRC implemented by *Huggingface*. `convert_multispanqa_to_squad-iterative.py` converts datasets to iterative format. `run_squad.py` is for fine-tuning and `iterative_inference.py` to iteratively inference.
+
+Requires:
+
++ transformers==3.5.1
