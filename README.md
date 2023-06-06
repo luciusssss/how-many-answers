@@ -1,7 +1,7 @@
 # How Many Answers Should I Give? An Empirical Study of Multi-Answer Reading Comprehension
 Repo for *How Many Answers Should I Give? An Empirical Study of Multi-Answer Reading Comprehension*, Findings of ACL 2023
 
-Arxiv preprint: TBA
+Arxiv preprint: https://arxiv.org/abs/2306.00435
 
 ## Annotation Results
 The annotated data in our paper are in the `dataset.zip` file.
