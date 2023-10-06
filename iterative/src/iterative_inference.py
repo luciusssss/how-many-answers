@@ -1028,21 +1028,20 @@ if __name__ == "__main__":
 
 '''
 python iterative_train_inference_server_updated.py \
-  --model_type bert \
-  --model_name_or_path ../models/bert-base_multispanqa_allspan_squad-style-iterative_except-random-order-seed1+2_2ep \
+  --model_type roberta \
+  --model_name_or_path ../models/roberta-large_multispanqa_allspan_squad-style-iterative_except-appear-order \
   --do_eval \
   --do_lower_case \
   --version_2_with_negative \
   --data_dir ../data/multispanqa/data/MultiSpanQA_data \
-  --predict_file squad_dev_tiny.json \
+  --predict_file squad_dev.json \
   --cache_dir ../models/tmp \
   --max_seq_length 384 \
   --doc_stride 128 \
-  --beam_search_size 1 \
   --output_dir ../models/tmp \
   --overwrite_output_dir \
   --max_answer_length 20 \
-  --min_iterations 2 \
+  --min_iterations 1 \
   --max_iterations  999 \
   --beam_search_size 3 \
   --beam_search_length_penalty 0.7 \
