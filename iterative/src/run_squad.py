@@ -831,3 +831,25 @@ def main():
 if __name__ == "__main__":
     main()
 
+'''
+ python run_squad.py \
+  --model_type roberta \
+  --model_name_or_path ../models/roberta-large \
+  --do_train \
+  --do_eval \
+  --do_lower_case \
+  --version_2_with_negative \
+  --data_dir ../data/multispanqa/allspan_squad-style-iterative_except-appear-order \
+  --train_file train.json \
+  --predict_file dev.json \
+  --cache_dir ../models/roberta-large_multispanqa_allspan_squad-style-iterative_except-appear-order \
+  --per_gpu_train_batch_size 12 \
+  --learning_rate 3e-5 \
+  --num_train_epochs 2 \
+  --max_seq_length 384 \
+  --doc_stride 128 \
+  --save_steps 100000 \
+  --logging_steps 500 \
+  --output_dir ../models/roberta-large_multispanqa_allspan_squad-style-iterative_except-appear-order \
+  --overwrite_output_dir 
+'''
